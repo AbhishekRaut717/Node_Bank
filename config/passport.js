@@ -103,7 +103,7 @@ module.exports = function(passport)
 
 
 	passport.use(new GoogleStrategy({
-
+	// Please provide your own clientID, clientSecret and callbackURL from your google+ API credentials instead of 'keys';
     clientID        : keys.clientID,
     clientSecret    : keys.clientSecret,
     callbackURL     : keys.callbackURL,
