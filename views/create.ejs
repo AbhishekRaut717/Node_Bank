@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title> Banking API with Passport.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body         { padding-top:10px; }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h2><i class="medium material-icons">add_box</i> Create bank A/C </h2>
+    <br>
+    <hr>
+
+    <!-- LOGIN FORM -->
+    <form class="col s12" action="/auth/user/create" method="post">
+        <div class="row input-field col s6">
+            <label>A/C No.</label>
+            <input type="text" name="ac_no">
+        </div>
+
+
+         <div class="row input-field col s6">
+            <label>Type of A/C </label>
+            <input type="text"  name="ac_type">
+        </div>
+
+
+        <div class="row input-field col s6">
+            <label>First Name </label>
+            <input type="text"  name="fname">
+        </div>
+
+
+        <div class="row input-field col s6">
+            <label>Last Name </label>
+            <input type="text"  name="lname">
+        </div>
+
+
+        <div class="row input-field col s6">
+            <label>Branch ID </label>
+            <input type="text"  name="branch_id">
+        </div>
+
+         <div class="row input-field col s6">
+            <label>Balance </label>
+            <input type="text"  name="balance">
+        </div>
+
+
+        <button class=" medium btn waves-effect waves-light" type="submit"> Create
+    <i class="material-icons right">send</i>
+  </button>
+    </form>
+
+    <br>
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <a href="/auth/user" class="waves-effect waves-light btn-large"><i class="material-icons left">beenhere</i> Home </a>
+    <a href="/auth/user/info" class="waves-effect waves-light btn-large"><i class="material-icons left">beenhere</i> View Info and Balance </a>
+     <a href="/logout" class="waves-effect waves-light btn-large"><i class="material-icons left">close</i> Logout </a>
+     <br>
+     <br>
+     <hr>
+
+
+</div>
+</div>
+</body>
+</html>

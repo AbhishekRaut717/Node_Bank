@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title> Banking API with Passport.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body{
+          padding-top: 40px;
+        }
+        #p{
+          font-size: 25px;
+          text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron text- center">
+        <h1><i class="medium material-icons">airplay</i> Input A/c No. </h1>
+
+        <br>
+        <hr>
+        <br>
+      <form class="col s12" action="/auth/user/info" method="post">
+        <div class="row input-field col s6">
+          <p id="p"> Enter the A/C no. to get the information</p>
+        <br>
+        <% for(var i=0; i < data.length; i++) { %>
+        <button type="submit" name="ac_no" class="btn waves-effect waves-light" value= <%= data[i] %> > <%= data[i] %></button>
+      <% } %>
+      </div>
+      <!-- <button type="submit" class="btn waves-effect waves-light"> Submit <i class="material-icons right">send</i></button> -->
+      </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h5> Don't Have an Account ?</h5> <a href="/auth/user/create" class="waves-effect waves-light btn-small"><i class="material-icons left">business_center</i>
+    Create New Account </a>
+    <h5> Or else </h5>
+    <a href="/logout" class="waves-effect waves-light btn-small"><i class="material-icons left">close</i> Logout </a>
+
+    <a href="/auth/user" class="waves-effect waves-light btn-small"><i class="material-icons left">beenhere</i> Home </a>
+
+</div>
+</body>
+</html>

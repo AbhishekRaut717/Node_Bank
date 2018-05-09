@@ -1,0 +1,35 @@
+{
+  "name": "bankpassportv2",
+  "version": "1.1.0",
+  "description": "A Banking API with Passport.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Passport.js",
+    "Nodejs",
+    "Express.js",
+    "REST-API"
+  ],
+  "author": "Abhishek Raut",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.0.7",
+    "mongoose": "^5.0.17",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  }
+}

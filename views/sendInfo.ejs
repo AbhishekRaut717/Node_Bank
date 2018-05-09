@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title> Banking API with Passport.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body         { padding-top:60px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron text- center">
+        <h1><i class="medium material-icons">insert_chart</i> A/C Information </h1>
+
+        <br>
+
+      <table>
+        <thead>
+          <td>
+            A/c No.
+          </td>
+          <td>
+            A/c Type.
+          </td>
+          <td>
+            Branch ID
+          </td>
+          <td>
+            Balance
+          </td>
+          <td>
+            First Name
+          </td>
+          <td>
+            Last Name
+          </td>
+        </thead>
+      <tr>
+        <td>
+          <%= data.ac_no %>
+        </td>
+        <td>
+          <%= data.ac_type %>
+        </td>
+        <td>
+          <%= data.branch_id %>
+        </td>
+        <td>
+          <%= data.balance %>
+        </td>
+        <td>
+          <%= data.fname %>
+        </td>
+        <td>
+          <%= data.lname %>
+        </td>
+
+      </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <a href="/auth/user/info" class="waves-effect waves-light btn-large"><i class="material-icons left">beenhere</i> Check Another A/c </a>
+    &nbsp &nbsp   &nbsp &nbsp
+    <a href="/auth/user" class="waves-effect waves-light btn-large"><i class="material-icons left">beenhere</i> Home </a>
+    <br>
+    <br>
+    <br>
+    <a href="/logout" class="waves-effect waves-light btn-large"><i class="material-icons left">close</i> Logout </a>
+    &nbsp &nbsp
+
+
+</div>
+</body>
+</html>

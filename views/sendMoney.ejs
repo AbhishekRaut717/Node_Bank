@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <title> Banking API with Passport.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body         { padding-top:60px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron text- center">
+        <h1><i class="medium material-icons">insert_chart</i> A/C Information </h1>
+
+        <br>
+        <form class="" action="/auth/user/sendMoney" method="post">
+          <div class="row input-field col s8">
+          <label> Sender's A/c no. </label>
+          <input type="text" name="sender_ac_no" value="">
+        </div>
+
+        <div class="row input-field col s8">
+        <label> Receiver's A/c no. </label>
+        <input type="text" name="receiver_ac_no" value="">
+      </div>
+
+      <div class="row input-field col s8">
+      <label> Receiver's Email. </label>
+      <input type="text" name="receiver_email" value="">
+    </div>
+
+    <div class="row input-field col s8">
+    <label> Transaction Amount </label>
+    <input type="text" name="amt" value="">
+  </div>
+
+  <button type="submit" class="btn waves-effect waves-light"> Send Money   <i class="material-icons right">send</i></button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <a href="/auth/user/info" class="waves-effect waves-light btn-large"><i class="material-icons left">beenhere</i> Check Another A/c </a>
+    &nbsp &nbsp   &nbsp &nbsp
+    <a href="/auth/user" class="waves-effect waves-light btn-large"><i class="material-icons left">beenhere</i> Home </a>
+    <br>
+    <br>
+    <br>
+    <a href="/logout" class="waves-effect waves-light btn-large"><i class="material-icons left">close</i> Logout </a>
+    &nbsp &nbsp
+
+
+</div>
+</body>
+</html>

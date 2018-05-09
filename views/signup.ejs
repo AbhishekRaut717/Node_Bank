@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title> Banking API with Passport.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body         { padding-top:60px; }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1><i class="large material-icons">person_add</i> Signup</h1>
+    <br>
+    <hr>
+    <br>
+    <!-- LOGIN FORM -->
+    <form class="col s12" action="/signup" method="post">
+        <div class="row input-field col s6">
+            <label>Email</label>
+            <input type="text" class="validate" name="email" placeholder="Enter your Email">
+        </div>
+        <div class="row input-field col s6">
+            <label>Password</label>
+            <input type="password" class="validate" name="password" placeholder="Enter your password" >
+        </div>
+
+        <button class="btn waves-effect waves-light" type="submit"> Signup
+    <i class="material-icons right">person_add</i>
+  </button>
+    </form>
+
+    <br>
+
+    <p>Already have an account? <a href="/login">Login</a></p>
+    <p>Or go <a href="/">Index</a>.</p>
+
+</div>
+</div>
+</body>
+</html>
